@@ -199,7 +199,7 @@ class SimpleLinkedIn {
                 $type = $contentTypes[$type];
 
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                    "Content-type: application/$type[0]",
+                    "Content-type: $type[0]",
                     "x-li-format: $type[1]",
                     'Connection: close')
                 );
